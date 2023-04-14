@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: jetbrains;
+  src: url(../fonts/static/JetBrainsMono-Bold.ttf);
+}
+
+body {
+  background: linear-gradient(45deg, blue, purple);
+  height: 120vh;
+}
+
+form {
+  border: 1px solid black;
+  border-radius: 30px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  background-size: cover;
+  transform: translateY(5%);
+  width: 1200px;
+  height: auto;
+  padding: 30px;
+  box-shadow: 15px -15px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "jetbrains";
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h3 {
+  font-size: 25px;
+  font-family: "jetbrains";
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.header h4 {
+  font-size: 25px;
+  font-family: "jetbrains";
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.name,
+.email,
+.birth,
+.adress,
+.contato,
+.infos,
+.areas,
+.infos-2,
+span {
+  display: block;
+  margin-bottom: 15px;
+  font-family: "jetbrains";
+}
+
+.email label::after {
+  content: " *";
+  color: red;
+}
+
+.name label::after {
+  content: " *";
+  color: red;
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+}
+
+input,
+select {
+  padding: 4px 40px;
+}
+
+.infos-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.infos input {
+  width: 20px;
+  align-self: center;
+  gap: 5px;
+}
+
+input {
+  border-radius: 4px;
+}
+
+.final input + span {
+  display: inline;
+}
+
+input:invalid + span {
+  color: red;
+}
+
+input:valid + span {
+  color: green;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input[type="radio"] + label {
+  margin-right: 55px;
+}
+
+input[type="radio"]:checked {
+  color: green;
+}
+
+input[type="radio"] {
+  accent-color: green;
+}
+
+option:checked {
+  color: green;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+select:checked {
+  color: green;
+}
+
+.error {
+  color: red;
+  font-size: 0.75rem;
+  display: none;
+}
+
+input:invalid + .error {
+  display: block;
+}
+
+button {
+  padding: 1.5rem 4rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  font-family: "jetbrains";
+  box-shadow: 2px 2px 2px;
+  transition: 200ms;
+}
+
+button:hover {
+  background-color: rgb(15, 172, 15);
+  color: white;
+  transform: scale(1.08);
+}
+
+button:active {
+  border: 2px solid rgb(0, 0, 0);
+  color: white;
+  background-color: rgb(60, 48, 226);
+}

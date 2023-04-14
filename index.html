@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Faça seu Cadastro</title>
+  </head>
+  <body>
+    <form>
+      <h2>Cadastro de Aluno</h2>
+      <div class="header">
+        <h3>Aprenda a Programar</h3>
+        <h4>Incrições de 20/07/2023 a 20/09/2023</h4>
+      </div>
+
+      <div class="name">
+        <label for="name">Nome</label>
+        <input type="text" name="text" required />
+
+        <label for="last-name">Sobrenome</label>
+        <input type="text" name="text" required />
+      </div>
+
+      <div class="email">
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="exemplo@exemplo.com"
+        />
+        <span class="error">E-mail Inválido</span>
+      </div>
+
+      <div class="birth">
+        <label for="birth">Nascimento</label>
+        <input type="date" name="birth" min="1980-01-01" max="2005-12-31" />
+        <span class="error">Data de Nascimento Inválida</span>
+      </div>
+
+      <div class="adress">
+        <label for="adress">Endereço</label>
+        <input type="text" name="text" />
+
+        <label for="city">Cidade</label>
+        <input type="text" name="texte" />
+
+        <label for="state">Estado</label>
+        <input type="text" name="text" />
+
+        <label for="zip-code">CEP / Código Postal</label>
+        <input type="text" name="text" placeholder="00000-000" />
+      </div>
+
+      <div class="contato">
+        <label for="ddd">DDD</label>
+        <input type="text" pattern="^\d{2}$" required />
+        <span class="error">DDD Inválido</span>
+        <label for="tel">Telefone</label>
+        <input
+          type="tel"
+          name="tel"
+          pattern="^\d{9}$"
+          placeholder="0-0000-0000"
+          required
+        />
+        <span class="error">Telefone Inválido</span>
+      </div>
+
+      <div class="infos">
+        Já teve contato anterior com alguma linguagem de programação?
+        <div class="infos-box">
+          <input type="radio" name="knowledge" />
+          <label for="knowledge">Sim</label>
+          <input type="radio" name="knowledge" />
+          <label for="knowledge">Não</label>
+        </div>
+      </div>
+
+      <div class="infos-2">
+        <p>Se sim, qual?</p>
+        <label for="knowledge"></label>
+        <input type="text" name="text" />
+      </div>
+
+      <div class="areas">
+        Qual linguagem de programação você quer aprender?
+        <select name="Linguagem">
+          <option value="JavaScript">JavaScript</option>
+          <option value="Java">Java</option>
+          <option value="pytoh">Python</option>
+          <option value="GoLang">GoLang</option>
+          <option value="PHP">PHP</option>
+          <option value="c++">C++</option>
+          <option value="c#">C#</option>
+          <option value="ruby">Ruby</option>
+        </select>
+      </div>
+
+      <label class="final">
+        <input type="checkbox" required />
+        <span>Li e aceito os termos de uso</span>
+      </label>
+      <br />
+
+      <button>Enviar</button>
+    </form>
+  </body>
+</html>
